@@ -13,9 +13,10 @@ contract Account { // base contract
     }
 }
 
-contract AccountFactory { // this contract is used to deploy multiple contract Account
+contract AccountFactory { 
     Account[] public accounts;
-    
+
+    // the new keyword is basically used to create an object of type Account 
     function create_Account(address _owner) external payable{ // making the function payable
         // since the Account is payable we can send the value through the curly brackets
         Account test = new Account{value: 100 wei}(_owner, msg.sender); 
