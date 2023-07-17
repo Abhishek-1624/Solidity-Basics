@@ -1,6 +1,6 @@
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.0;
+pragma solidity ^0.8.0;
 
 contract test {
 
@@ -97,5 +97,7 @@ contract test {
 --> At an overview Encoing is something very similar to converting the data given into the hex-form
 
 --> It is very common to encode and decode data and also widely used to concat string data
+
+--> In general the hex is the form that usually EVM understands the data 
 
 */
